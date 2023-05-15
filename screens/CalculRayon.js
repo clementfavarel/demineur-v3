@@ -35,18 +35,30 @@ const CalculRayon = () => {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View style={[layout.row, layout.flexCenter]}>
-                    <TextInput
-                        style={styles.input}
-                        onChangeText={(value) => dispatch(setPdC(value))}
-                        value={PdC.toString()}
-                        keyboardType="numeric"
-                    />
-                    <TextInput
-                        style={styles.input}
-                        onChangeText={(value) => dispatch(setK(value))}
-                        value={K.toString()}
-                        keyboardType="numeric"
-                    />
+                    <View style={styles.input}>
+                        <View style={layout.rowSpaced}>
+                            <Text>PdC</Text>
+                            <Text>kg</Text>
+                        </View>
+                        <TextInput
+                            style={styles.input}
+                            onChangeText={(value) => dispatch(setPdC(value))}
+                            keyboardType="numeric"
+                            value={PdC.toString()}
+                        />
+                    </View>
+                    <View style={styles.input}>
+                        <View style={layout.rowSpaced}>
+                            <Text>K</Text>
+                            <Text>{null}</Text>
+                        </View>
+                        <TextInput
+                            style={styles.input}
+                            onChangeText={(value) => dispatch(setK(value))}
+                            keyboardType="numeric"
+                            value={K.toString()}
+                        />
+                    </View>
                 </View>
                 <View style={[layout.row, layout.flexCenter]}>
                     <DisplayBox
