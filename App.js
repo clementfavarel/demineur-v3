@@ -82,9 +82,12 @@ const App = () => {
                     />
                     <Stack.Screen name="Rayon carte" component={RayonCarte} />
                     <Stack.Screen name="Rayon soum" component={RayonSoum} />
-                    <Stack.Screen name="Calcul dose" component={CalculDose} />
                     <Stack.Screen
-                        name="Calcul volume"
+                        name="Calcul de dose"
+                        component={CalculDose}
+                    />
+                    <Stack.Screen
+                        name="Calcul de volume"
                         component={CalculVolume}
                     />
                     <Stack.Screen
