@@ -91,7 +91,7 @@ const App = () => {
                         component={CalculVolume}
                     />
                     <Stack.Screen
-                        name="Volume air trasoum"
+                        name="Volume Air Trasoum"
                         component={VolumeAirTrasoum}
                     />
                     <Stack.Screen name="Carte" component={Map} />
