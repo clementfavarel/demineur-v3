@@ -39,8 +39,8 @@ const RayonCarte = () => {
             <View style={[layout.row, layout.flexCenter]}>
                 <View style={styles.input}>
                     <View style={layout.rowSpaced}>
-                        <Text>PdC</Text>
-                        <Text>kg</Text>
+                        <Text>Taille échelle carte</Text>
+                        <Text>m</Text>
                     </View>
                     <TextInput
                         style={styles.input}
@@ -53,8 +53,8 @@ const RayonCarte = () => {
                 </View>
                 <View style={styles.input}>
                     <View style={layout.rowSpaced}>
-                        <Text>PdC</Text>
-                        <Text>kg</Text>
+                        <Text>Taille mesurée</Text>
+                        <Text>cm</Text>
                     </View>
                     <TextInput
                         style={styles.input}
@@ -69,8 +69,8 @@ const RayonCarte = () => {
             <View style={[layout.row, layout.flexCenter]}>
                 <View style={styles.input}>
                     <View style={layout.rowSpaced}>
-                        <Text>PdC</Text>
-                        <Text>kg</Text>
+                        <Text>Taille réelle</Text>
+                        <Text>m</Text>
                     </View>
                     <TextInput
                         style={styles.input}
@@ -95,8 +95,8 @@ const RayonCarte = () => {
             <View style={[layout.row, layout.flexCenter]}>
                 <View style={styles.input}>
                     <View style={layout.rowSpaced}>
-                        <Text>PdC</Text>
-                        <Text>kg</Text>
+                        <Text>Taille carte</Text>
+                        <Text>cm</Text>
                     </View>
                     <TextInput
                         style={styles.input}
