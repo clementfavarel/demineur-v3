@@ -107,9 +107,3 @@ export function R8Carte(tailleMesuree, tailleEchelleCarte) {
 export function R9Carte(tailleMesuree, tailleEchelleCarte) {
     return (rayon9(80, 0.5) * tailleMesuree) / tailleEchelleCarte;
 }
-
-// Convertisseur virgule en point
-export const convertCommaToDot = (setState) => (text) => {
-    const value = text.replace(",", ".");
-    setState(value);
-};
