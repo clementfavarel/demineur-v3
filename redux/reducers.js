@@ -5,6 +5,9 @@ import {
     SET_TAILLE_MESUREE,
     SET_TAILLE_REELLE,
     SET_TAILLE_CARTE,
+    SET_NB_TIRS,
+    SET_NB_PULSE_PAR_TIR,
+    SET_DISTANCE_PASSAGE_PAX,
 } from "./actions";
 
 const initialState = {
@@ -14,6 +17,9 @@ const initialState = {
     tailleMesuree: 5,
     tailleReelle: 8.6,
     tailleCarte: 2.5,
+    nbTirs: 1,
+    nbPulseParTir: 50,
+    distancePassagePax: 2.68,
 };
 
 function crReducer(state = initialState, action) {
@@ -47,6 +53,21 @@ function crReducer(state = initialState, action) {
             return {
                 ...state,
                 tailleCarte: action.payload,
+            };
+        case SET_NB_TIRS:
+            return {
+                ...state,
+                nbTirs: action.payload,
+            };
+        case SET_NB_PULSE_PAR_TIR:
+            return {
+                ...state,
+                nbPulseParTir: action.payload,
+            };
+        case SET_DISTANCE_PASSAGE_PAX:
+            return {
+                ...state,
+                distancePassagePax: action.payload,
             };
         default:
             return state;
