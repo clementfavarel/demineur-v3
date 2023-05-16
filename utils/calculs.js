@@ -107,3 +107,16 @@ export function R8Carte(tailleMesuree, tailleEchelleCarte) {
 export function R9Carte(tailleMesuree, tailleEchelleCarte) {
     return (rayon9(80, 0.5) * tailleMesuree) / tailleEchelleCarte;
 }
+
+// Map
+export const rayonFunctions = [
+    { func: R1Carte, color: "green" },
+    { func: R2Carte, color: "blue" },
+    { func: R3Carte, color: "red" },
+    { func: R4Carte, color: "yellow" },
+    { func: R5Carte, color: "purple" },
+    { func: R6Carte, color: "brown" },
+    { func: R7Carte, color: "black" },
+    { func: R8Carte, color: "pink" },
+    { func: R9Carte, color: "white" },
+];

@@ -10,6 +10,7 @@ import RayonSoum from "./screens/RayonSoum";
 import CalculDose from "./screens/CalculDose";
 import CalculVolume from "./screens/CalculVolume";
 import VolumeAirTrasoum from "./screens/VolumeAirTrasoum";
+import Map from "./screens/Map";
 
 const Stack = createNativeStackNavigator();
 
@@ -52,6 +53,12 @@ function Accueil({ navigation }) {
             >
                 <Text style={styles.text}>Volume Air Trasoum</Text>
             </Pressable>
+            <Pressable
+                style={styles.button}
+                onPress={() => navigation.navigate("Map")}
+            >
+                <Text style={styles.text}>Map</Text>
+            </Pressable>
         </View>
     );
 }
@@ -80,6 +87,7 @@ const App = () => {
                         name="Volume Air Trasoum"
                         component={VolumeAirTrasoum}
                     />
+                    <Stack.Screen name="Map" component={Map} />
                 </Stack.Navigator>
             </NavigationContainer>
         </Provider>
