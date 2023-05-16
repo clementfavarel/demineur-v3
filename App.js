@@ -94,7 +94,7 @@ const App = () => {
                         name="Volume Air Trasoum"
                         component={VolumeAirTrasoum}
                     />
-                    <Stack.Screen name="Carte" component={Map} />
+                    <Stack.Screen name="Map" component={Map} />
                     <Stack.Screen name="Compte rendu" component={CompteRendu} />
                 </Stack.Navigator>
             </NavigationContainer>
