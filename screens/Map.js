@@ -14,7 +14,7 @@ export default function App() {
     const [userLocation, setUserLocation] = useState(null);
     const [locationLoaded, setLocationLoaded] = useState(false);
     const screenHeight = Dimensions.get("window").height;
-    const { tailleMesuree, tailleEchelleCarte } = useSelector(
+    const { PdC, K, tailleMesuree, tailleEchelleCarte } = useSelector(
         (state) => state.crReducer
     );
     useEffect(() => {
@@ -73,7 +73,12 @@ export default function App() {
                     <Circle
                         key={index}
                         center={userLocation}
-                        radius={item.func(tailleMesuree, tailleEchelleCarte)}
+                        radius={item.func(
+                            PdC,
+                            K,
+                            tailleMesuree,
+                            tailleEchelleCarte
+                        )}
                         strokeColor={item.color} // Couleur spécifiée dans rayonFunctions
                     />
                 ))}

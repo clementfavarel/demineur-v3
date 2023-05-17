@@ -1,5 +1,6 @@
-// Calculs de rayons
+import { useSelector } from "react-redux";
 
+// Calculs de rayons
 export function rayon1(PdC) {
     return Math.sqrt(PdC) * 5;
 }
@@ -72,40 +73,40 @@ export function displayTailleReelle(
     return (tailleCarte * tailleEchelleCarte) / tailleMesuree;
 }
 
-export function R1Carte(tailleMesuree, tailleEchelleCarte) {
-    return (rayon1(80) * tailleMesuree) / tailleEchelleCarte;
+export function R1Carte(PdC, tailleMesuree, tailleEchelleCarte) {
+    return (rayon1(PdC) * tailleMesuree) / tailleEchelleCarte;
 }
 
-export function R2Carte(tailleMesuree, tailleEchelleCarte) {
-    return (rayon2(80) * tailleMesuree) / tailleEchelleCarte;
+export function R2Carte(PdC, tailleMesuree, tailleEchelleCarte) {
+    return (rayon2(PdC) * tailleMesuree) / tailleEchelleCarte;
 }
 
-export function R3Carte(tailleMesuree, tailleEchelleCarte) {
-    return (rayon3(80) * tailleMesuree) / tailleEchelleCarte;
+export function R3Carte(PdC, tailleMesuree, tailleEchelleCarte) {
+    return (rayon3(PdC) * tailleMesuree) / tailleEchelleCarte;
 }
 
-export function R4Carte(tailleMesuree, tailleEchelleCarte) {
-    return (rayon4(80) * tailleMesuree) / tailleEchelleCarte;
+export function R4Carte(PdC, tailleMesuree, tailleEchelleCarte) {
+    return (rayon4(PdC) * tailleMesuree) / tailleEchelleCarte;
 }
 
-export function R5Carte(tailleMesuree, tailleEchelleCarte) {
-    return (rayon5(80, 0.5) * tailleMesuree) / tailleEchelleCarte;
+export function R5Carte(PdC, K, tailleMesuree, tailleEchelleCarte) {
+    return (rayon5(PdC, K) * tailleMesuree) / tailleEchelleCarte;
 }
 
-export function R6Carte(tailleMesuree, tailleEchelleCarte) {
-    return (rayon6(80, 0.5) * tailleMesuree) / tailleEchelleCarte;
+export function R6Carte(PdC, K, tailleMesuree, tailleEchelleCarte) {
+    return (rayon6(PdC, K) * tailleMesuree) / tailleEchelleCarte;
 }
 
-export function R7Carte(tailleMesuree, tailleEchelleCarte) {
-    return (rayon7(80, 0.5) * tailleMesuree) / tailleEchelleCarte;
+export function R7Carte(PdC, K, tailleMesuree, tailleEchelleCarte) {
+    return (rayon7(PdC, K) * tailleMesuree) / tailleEchelleCarte;
 }
 
-export function R8Carte(tailleMesuree, tailleEchelleCarte) {
-    return (rayon8(80, 0.5) * tailleMesuree) / tailleEchelleCarte;
+export function R8Carte(PdC, K, tailleMesuree, tailleEchelleCarte) {
+    return (rayon8(PdC, K) * tailleMesuree) / tailleEchelleCarte;
 }
 
-export function R9Carte(tailleMesuree, tailleEchelleCarte) {
-    return (rayon9(80, 0.5) * tailleMesuree) / tailleEchelleCarte;
+export function R9Carte(PdC, K, tailleMesuree, tailleEchelleCarte) {
+    return (rayon9(PdC, K) * tailleMesuree) / tailleEchelleCarte;
 }
 
 // Map
