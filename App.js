@@ -106,9 +106,12 @@ const styles = StyleSheet.create({
         padding: 30,
         margin: 50,
         alignItems: "center",
-        backgroundColor: "#00f",
+        backgroundColor: "#0095FF",
+        borderRadius: 10,
     },
     text: {
         color: "#fff",
+        fontSize: 16,
+        fontWeight: "bold",
     },
 });
