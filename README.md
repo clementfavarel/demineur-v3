@@ -56,9 +56,9 @@ React Native (développement d’application mobile hybride/cross-platform).
 
 ### Installation du projet (commandes dans un terminal)
 
-git clone https://github.com/Gitfanlab/demineur-v3.git (nécessite git installé sur l'ordinateur)
-npm install (nécessite node js installé sur l'ordinateur)
-npx expo start (pour démarrer l'application)
+-   git clone https://github.com/Gitfanlab/demineur-v3.git (nécessite git installé sur l'ordinateur)
+-   npm install (nécessite node js installé sur l'ordinateur)
+-   npx expo start (pour démarrer l'application)
 
 2 possibilités pour faire fonctionner l'application :
 **iPhone :** Scanner le QR code à l'aide de la caméra et cliquer sur le lien
@@ -66,7 +66,7 @@ npx expo start (pour démarrer l'application)
 
 ### Build un APK de l'application
 
-npm install -g eas-cli
-eas login
-eas build:configure (select Android)
-eas build (select Android)
+-   npm install -g eas-cli
+-   eas login
+-   eas build:configure (select Android)
+-   eas build (select Android)
