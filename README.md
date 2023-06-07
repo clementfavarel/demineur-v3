@@ -61,8 +61,9 @@ React Native (développement d’application mobile hybride/cross-platform).
 -   npx expo start (pour démarrer l'application)
 
 2 possibilités pour faire fonctionner l'application :
-**iPhone :** Scanner le QR code à l'aide de la caméra et cliquer sur le lien
-**Android :** Télécharger l'application Expo Go et scanner le QR code dans l'application.
+
+-   **iPhone :** Scanner le QR code à l'aide de la caméra et cliquer sur le lien
+-   **Android :** Télécharger l'application Expo Go et scanner le QR code dans l'application.
 
 ### Build un APK de l'application
 
