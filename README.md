@@ -24,30 +24,49 @@ Un système de compte rendu serait un gain de temps supplémentaire.
 
 **Grandes sections de l’application :**
 
-- Calculs
-- Carte
+-   Calculs
+-   Carte
 
 **Rubriques de la section Calculs : (sous forme d’onglets)**
 
-- Calcul de rayon terrestre
-- Rayon carte
-- Rayon sous-marin
-- Calcul de dose
-- Calcul de volumes
-- Volume air TRASOUM
+-   Calcul de rayon terrestre
+-   Rayon carte
+-   Rayon sous-marin
+-   Calcul de dose
+-   Calcul de volumes
+-   Volume air TRASOUM
 
 **Rubriques de la section Carte : (sous forme de boutons “activer/désactiver”)**
 
-- Rayons de R1 à R9
-- Isobathes
-- Visualisation de la mine
+-   Rayons de R1 à R9
+-   Isobathes
+-   Visualisation de la mine
 
 ### Contraintes techniques
 
 **Intégration de services tiers :**
 
-- API Google Maps
-- API Isobathes
+-   API Google Maps
+-   API Isobathes
 
 **Solutions utilisées pour l’application :**
 React Native (développement d’application mobile hybride/cross-platform).
+
+# Documentation
+
+### Installation du projet (commandes dans un terminal)
+
+git clone https://github.com/Gitfanlab/demineur-v3.git (nécessite git installé sur l'ordinateur)
+npm install (nécessite node js installé sur l'ordinateur)
+npx expo start (pour démarrer l'application)
+
+2 possibilités pour faire fonctionner l'application :
+**iPhone :** Scanner le QR code à l'aide de la caméra et cliquer sur le lien
+**Android :** Télécharger l'application Expo Go et scanner le QR code dans l'application.
+
+### Build un APK de l'application
+
+npm install -g eas-cli
+eas login
+eas build:configure (select Android)
+eas build (select Android)
