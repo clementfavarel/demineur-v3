@@ -70,4 +70,30 @@ React Native (développement d’application mobile hybride/cross-platform).
 -   npm install -g eas-cli
 -   eas login
 -   eas build:configure (select Android)
--   eas build (select Android)
+
+copiez ça :
+
+{
+"build": {
+"preview": {
+"android": {
+"buildType": "apk"
+}
+},
+"preview2": {
+"android": {
+"gradleCommand": ":app:assembleRelease"
+}
+},
+"preview3": {
+"developmentClient": true
+},
+"production": {}
+}
+}
+
+et collez-le dans eas.json
+
+ensuite executez la commande :
+
+-   eas build -p android --profile preview
