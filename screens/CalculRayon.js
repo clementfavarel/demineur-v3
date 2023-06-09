@@ -25,7 +25,6 @@ import {
     rayon10entonnoir,
     rayonSympathie,
     rayonEclat,
-    convertCommaToDot,
 } from "../utils/calculs";
 
 const CalculRayon = () => {
