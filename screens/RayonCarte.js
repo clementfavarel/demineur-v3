@@ -123,19 +123,19 @@ const RayonCarte = () => {
                     title="R1 Carte"
                     unit="cm"
                     color="#333"
-                    value={R1Carte(tailleMesuree, tailleEchelleCarte)}
+                    value={R1Carte(PdC, tailleMesuree, tailleEchelleCarte)}
                 />
                 <DisplayBox
                     title="R2 Carte"
                     unit="cm"
                     color="#333"
-                    value={R2Carte(tailleMesuree, tailleEchelleCarte)}
+                    value={R2Carte(PdC, tailleMesuree, tailleEchelleCarte)}
                 />
                 <DisplayBox
                     title="R3 Carte"
                     unit="cm"
                     color="#333"
-                    value={R3Carte(tailleMesuree, tailleEchelleCarte)}
+                    value={R3Carte(PdC, tailleMesuree, tailleEchelleCarte)}
                 />
             </View>
             <View style={[layout.row, layout.flexCenter]}>
@@ -143,19 +143,19 @@ const RayonCarte = () => {
                     title="R4 Carte"
                     unit="cm"
                     color="#333"
-                    value={R4Carte(tailleMesuree, tailleEchelleCarte)}
+                    value={R4Carte(PdC, tailleMesuree, tailleEchelleCarte)}
                 />
                 <DisplayBox
                     title="R5 Carte"
                     unit="cm"
                     color="#333"
-                    value={R5Carte(tailleMesuree, tailleEchelleCarte)}
+                    value={R5Carte(PdC, K, tailleMesuree, tailleEchelleCarte)}
                 />
                 <DisplayBox
                     title="R6 Carte"
                     unit="cm"
                     color="#333"
-                    value={R6Carte(tailleMesuree, tailleEchelleCarte)}
+                    value={R6Carte(PdC, K, tailleMesuree, tailleEchelleCarte)}
                 />
             </View>
             <View style={[layout.row, layout.flexCenter]}>
@@ -163,19 +163,19 @@ const RayonCarte = () => {
                     title="R7 Carte"
                     unit="cm"
                     color="#333"
-                    value={R7Carte(tailleMesuree, tailleEchelleCarte)}
+                    value={R7Carte(PdC, K, tailleMesuree, tailleEchelleCarte)}
                 />
                 <DisplayBox
                     title="R8 Carte"
                     unit="cm"
                     color="#333"
-                    value={R8Carte(tailleMesuree, tailleEchelleCarte)}
+                    value={R8Carte(PdC, K, tailleMesuree, tailleEchelleCarte)}
                 />
                 <DisplayBox
                     title="R9 Carte"
                     unit="cm"
                     color="#333"
-                    value={R9Carte(tailleMesuree, tailleEchelleCarte)}
+                    value={R9Carte(PdC, K, tailleMesuree, tailleEchelleCarte)}
                 />
             </View>
         </SafeAreaView>
